@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        .container
+        {
+            width: 100vw;
+            height: 100vh;
+        
+        }
+        .child
+        {
+            display: grid;
+            width: 100vh;
+            height: 50vh;
+            gap: 5px 10px;
+            margin: 10px;
+            grid-template-columns: auto auto auto auto;
+            
+        }
+        .child3,.child7,.child5
+        {
+            background-color: rgb(191, 44, 44);
+        }
+        .child div{
+            display: grid;
+            border: 2px solid;
+        }
+        .child4,.child8
+        {
+            background-color: rgb(218, 170, 49);
+        }
+        .child1
+        {
+            background-color: rgb(86, 171, 86);
+            display: grid;
+            grid-row:1/4;
+        }
+        .child2
+        {
+            background-color: lightgreen;
+            grid-column: 2/4;
+        }
+        .child6
+        {
+            background-color: rgb(86, 192, 84);
+            grid-row: 2/4;
+            grid-column: 4/5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="child">
+   <div class="child1">1</div>
+   <div class="child2">2</div>
+   <div class="child3">3</div>
+   <div class="child4">4</div>
+   <div class="child5">5</div>
+   <div class="child6">6</div>
+   <div class="child7">7</div>
+   <div class="child8">8</div>
+   
+</div>
+
+
+    </div>
+</body>
+</html>
